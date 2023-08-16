@@ -1,0 +1,39 @@
+body
+{
+  overflow-x: hidden;
+}
+.bor
+{
+  transition: 0.5s;
+}
+.bor::after
+{
+
+  display: block;
+  content: '';
+  border-bottom: solid 3px #050040;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.bor:hover::after
+{
+  transform: scaleX(1);
+}
+.bor:hover:after
+{
+  transform-origin: 0% 50%;
+}
+button
+{
+  transition: 0.5s;
+}
+button:hover
+{
+  opacity: 0.8;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu{
+  margin-top: 0;
+}
